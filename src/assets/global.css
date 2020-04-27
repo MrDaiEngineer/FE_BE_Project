@@ -1,0 +1,7 @@
+/* 全局样式 */
+html,body,#app{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 1236px; /* 最小屏幕宽度 */
+}
