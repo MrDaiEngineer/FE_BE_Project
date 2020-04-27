@@ -20,7 +20,7 @@ const router = new VueRouter({
 
 // 挂载路由导航守卫
 router.beforeEach((to, from, next) =>{
-  if(to.path == '/login') return next()
+  if(to.path == '/login' || to.path == '/regist') return next()
   const token = document.cookie
   if(!token){
     Message.error('未登录，请先登录！')
